@@ -33,3 +33,163 @@ Nastav je receptům jako obrázky na pozadí (tj. nepřidávej je jako <img> do 
 Na rozložení prvků NEPOUŽÍVEJ absolutní pozicování, ale pouze flexboxy.
 Flexboxy mohou být vnořené do sebe, klidně několikrát.
 */
+
+/*
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Raleway', sans-serif;
+
+*/
+
+
+
+h1 {
+	margin: 0;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	font-family: 'Raleway', sans-serif;
+	font-size: 28px;
+	font-weight: 800;
+}
+
+h2 {
+	margin: 0;
+	color: white;
+	text-shadow: 2px 2px 5px black;
+	font-family: 'Raleway', san-serif;
+	font-size: 18px;
+	font-weight: 800;
+}
+
+.hlavni-recept,
+.recept {
+	color: white;
+	text-shadow: 10px 10px 10px black;
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	min-height: 200px;
+	padding: 10px;
+	border-bottom: 1px solid white;
+}
+
+.hlavni-recept {
+	background-image: url(images/salat.jpg);
+	background-size: cover;
+	min-height: 200px;	
+}
+
+.kategorie-komentare {
+	color: white;
+	font-size: 14px;
+	text-shadow: 2px 2px 5px black;
+	display: flex;
+	justify-content: space-between;
+	flex: 1 1 100%;
+}
+
+.nadpis-recept {
+	align-self: flex-end;
+	flex: 1 1 100%;	
+}	
+
+
+.prvni {
+	background-image: url(images/chlebicek.jpg);
+	background-size: cover;
+}
+
+.druhy {
+	background-image: url(images/tacos.jpg);
+	background-size: cover;
+}
+
+.treti {
+	background-image: url(images/cizrna.jpg);
+	background-size: cover;
+}
+
+.ctvrty {
+	background-image: url(images/burger.jpg);
+	background-size: cover;
+}
+
+.prvni,
+.druhy,
+.treti,
+.ctvrty {
+	min-height: 90px;
+}
+
+@media screen and (min-width: 480px) {
+	.kontejner {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.hlavni-recept {
+		flex: 1 1 100%;
+		padding: 20px;
+	}
+
+	.male-recepty {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.recept {
+		flex: 1 1 50%;
+		padding: 20px;
+	}
+
+	h1 {
+		font-size: 36px;
+	}
+
+	h2 {
+		font-size: 22px;
+	}
+
+	.hlavni-recept {
+		min-height: 250px;
+	}
+
+	.recept {
+		min-height: 150px;
+	}
+
+	.prvni,
+	.treti {
+		border-right: 1px solid white;
+	}
+	
+}
+
+@media screen and (min-width: 860px) {
+	.kontejner {
+		flex-wrap: nowrap;
+	}
+	
+	.male-recepty {
+		display: flex;
+		flex-wrap: wrap;
+		flex: 1 1 100%;
+	}
+
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 28px;
+	}
+
+	.hlavni-recept {
+		min-height: 400px;
+	}
+
+	.recept {
+		min-height: 200px;
+	}
+
+	
+}
