@@ -99,24 +99,28 @@ h2 {
 	background-image: url(images/chlebicek.jpg);
 	background-size: cover;
 	background-position: center;
+	background-repeat: repeat;
 }
 
 .druhy {
 	background-image: url(images/tacos.jpg);
 	background-size: cover;
 	background-position: center;
+	background-repeat: repeat;
 }
 
 .treti {
 	background-image: url(images/cizrna.jpg);
 	background-size: cover;
 	background-position: center;
+	background-repeat: repeat;
 }
 
 .ctvrty {
 	background-image: url(images/burger.jpg);
 	background-size: cover;
 	background-position: center;
+	background-repeat: repeat;
 }
 
 .prvni,
