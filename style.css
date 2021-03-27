@@ -75,7 +75,9 @@ h2 {
 .hlavni-recept {
 	background-image: url(images/salat.jpg);
 	background-size: cover;
-	min-height: 200px;	
+	background-position: center;
+	min-height: 200px;
+		
 }
 
 .kategorie-komentare {
@@ -96,21 +98,25 @@ h2 {
 .prvni {
 	background-image: url(images/chlebicek.jpg);
 	background-size: cover;
+	background-position: center;
 }
 
 .druhy {
 	background-image: url(images/tacos.jpg);
 	background-size: cover;
+	background-position: center;
 }
 
 .treti {
 	background-image: url(images/cizrna.jpg);
 	background-size: cover;
+	background-position: center;
 }
 
 .ctvrty {
 	background-image: url(images/burger.jpg);
 	background-size: cover;
+	background-position: center;
 }
 
 .prvni,
@@ -185,6 +191,7 @@ h2 {
 
 	.hlavni-recept {
 		min-height: 400px;
+		flex: 1 1 30%;
 	}
 
 	.recept {
